@@ -3,100 +3,299 @@
   <head>
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" 
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-      .container {
-        width: 960px;
-      }
-      p.lead {
-        padding-top: 15px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
-        text-align: center;
-      }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
-      }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/app.css">
+    <script src="javascripts/vendor/custom.modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
+   <header>
+        <div class="page">
+          <div class="logo"></div>
+          <nav class="menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
-        </div>
-      </div>
-      <div class="row heading">
-        <div class="span12">
-          <h1>Bitstarter Title</h1>
-        </div>
-      </div> 
-     <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
-        </div>
-      </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
-        </div>
-        <div class="span6">
+    </header>
+    <div class="project-info">
+        <div class="page">
+          <div class="main-picture">
+            <div class="slogan"><span>Let's make open-source music together </span></div>
+          </div>
           <div class="thermometer">
-            Thermometer
+            <div class="column backers">
+              <span class="counters">1000</span>
+              <span class="text">backers</span>
+            </div>
+            <div class="column counters">
+              <span class="counters">$6,000</span>
+              <span class="text"> of $10,000</span>
+            </div>
+            <div class="column days">
+              <span class="counters">10</span>
+              <span class="text">days left</span>
+            </div>
+            <div class="progress">
+              <div class="bar" style="width: 60%;"></div>
+            </div>
+            <button class="btn">Support the project</button>
+            <span class="hint">to get exclusive accounts*</span>
           </div>
-          <div class="order">
-            Order
-          </div>
-          <div class="social">
-            Social
-          </div>
         </div>
       </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1
-        </div>
+      <!--Project info-->
+  
+    
+      
+
+
+    <section id="pitch">
+      <h2>Are you a musician, or audio producer?</h2>
+      <div class="page">
+        <article class="block">
+          <div class="pic"><img src="images/1.jpg" alt=""></div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nihil, tempora aperiam quidem expedita maiores reprehenderit dignissimos sunt natus harum nemo ipsa porro deserunt. Tenetur explicabo mollitia placeat harum in.</div>
+        </article>
+        <article class="block">
+          <div class="pic"><img src="images/2.jpg" alt=""></div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nihil, tempora aperiam quidem expedita maiores reprehenderit dignissimos sunt natus harum nemo ipsa porro deserunt. Tenetur explicabo mollitia placeat harum in.</div>
+        </article>
       </div>
-      <div class="row section2">
-        <div class="span12">
-          Marketing Section 2
-        </div>
+      <h2>Create virtual bands</h2>
+      <div class="page"> 
+        <article class="block">
+          
+
+          <div class="pic"><img src="images/3.jpg" alt=""></div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nihil, tempora aperiam quidem expedita maiores reprehenderit dignissimos sunt natus harum nemo ipsa porro deserunt. Tenetur explicabo mollitia placeat harum in.</div>
+        </article>
+        <article class="block">
+          <div class="pic"><img src="images/4.jpg" alt=""></div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nihil, tempora aperiam quidem expedita maiores reprehenderit dignissimos sunt natus harum nemo ipsa porro deserunt. Tenetur explicabo mollitia placeat harum in.</div>
+        </article>
       </div>
-      <div class="row faq">
-        <div class="span12">
-          FAQ
-        </div>
+      <h2>Generate buzz and get paid</h2>
+      <div class="page">
+        <article class="block">
+          <div class="pic"><img src="images/5.jpg" alt=""></div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nihil, tempora aperiam quidem expedita maiores reprehenderit dignissimos sunt natus harum nemo ipsa porro deserunt. Tenetur explicabo mollitia placeat harum in.</div>
+        </article>
+        <article class="block">
+          <div class="pic"><img src="images/6.jpg" alt=""></div>
+          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nihil, tempora aperiam quidem expedita maiores reprehenderit dignissimos sunt natus harum nemo ipsa porro deserunt. Tenetur explicabo mollitia placeat harum in.</div>
+        </article>
       </div>
-      <div class="row footer">
-        <div class="span12">
-          Footer
-        </div>
+    </section>
+
+      <h2>Who are we</h2>
+      <div class="page"> 
+        <section id="about">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, cumque voluptate minus saepe asperiores consequatur blanditiis quidem a impedit iure provident unde quo aspernatur quam beatae maiores nemo ea sed!</p> 
+        </section>
       </div>
-    </div>
+      <h2>Make this project possible</h2>
+      <div class="page">
+        <section id="perks">
+          <article class="perk">
+            <header>
+              <h3>Sneak-preview
+              <span class="amount">
+                <span class="dollars">$5 </span>
+                <span class="backers">unlimited</span>
+              </span>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+          <article class="perk">
+            <header>
+              <h3>Early-bird 
+              <span class="amount">
+                <span class="dollars">$10 </span>
+                <span class="backers">unlimited</span>
+              </span>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+          <article class="perk">
+            <header><h3>I believe in this 
+              <span class="amount">
+                <span class="dollars">$50 </span>
+                <span class="backers">180 available</span>
+              </span>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+          <article class="perk">
+            <header>
+              <h3>Been waiting for this
+                <span class="amount">
+                  <span class="dollars">$100 </span>
+                  <span class="backers">90 available</span>
+                </span>
+              </h3>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+          <article class="perk">
+            <header>
+              <h3>Can´t wait for this to happen 
+              <span class="amount">
+                  <span class="dollars">$300 </span>
+                  <span class="backers">30 available</span>
+              </span>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+          <article class="perk">
+            <header>
+              <h3> Founder account
+              <span class="amount">
+                  <span class="dollars">$500 </span>
+                  <span class="backers">18 available</span>
+              </span>
+              <span class="supporter">2 people have claimed this perk</span>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+          <article class="perk">
+            <header>
+              <h3> Brilliant idea, want to be part of it
+              <span class="amount">
+                  <span class="dollars">$1,000 </span>
+                  <span class="backers">9 available</span>
+              </span>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+          <article class="perk">
+            <header>
+              <h3> Seed capitalist 
+              <span class="amount">
+                  <span class="dollars">$3,000 </span>
+                  <span class="backers">3 available</span>
+              </span>
+              <span class="supporter">2 people have claimed this perk</span>
+            </header>
+            <div class="description">
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ut, magni eligendi molestiae fugiat vel pariatur doloribus recusandae expedita in porro esse impedit et. Temporibus, ipsum cum in voluptas veritatis.</p>
+            </div>
+            <div class="claim">
+              <button class="btn">Claim this perk</button>
+            </div>
+          </article>
+        </section>
+      </div>
+      <h2>How are we going to spend the money</h2>
+      <div class="page">
+        <section id="investment">
+          <p>Running a company is expensive believe it or not. For you to be sure how are we going to use the funds here are our financial projection</p>
+                <ol>
+                  <li>
+                    Wages and Salaries 
+                    <ul>
+                      <li>Front-end Engineer <span class="investment">$80k year</span></li>
+                      <li>Visual Designer <span class="investment">$80k year</span></li>
+                      <li>2 Back-end Programmers <span class="investment">$160k year</span></li>
+                      <li>iOS programmer <span class="investment">$90k year</span></li>
+                      <li>UX Lead <span class="investment">$100k year</span></li>
+                      <li>CEO <span class="investment">$100k year</span></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Fixed Costs
+                    <ul>
+                      <li>Office <div class="investment">$40k year</div></li>
+                      <li>Internet <div class="investment">$7k year</div></li>
+                      <li>Office equipment <div class="investment">$20k year</div></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Servers and Infraestructure
+                    <ul>
+                      <li>Servers <span class="investment">$30k year</span></li>
+                    
+                      <li>Laptops <div class="investment">$15k year</div></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Marketing & Promotion
+                    <ul>
+                      <li>Facebook ads <span class="investment">$30k year</span></li>
+                      <li>Google Adwords <span class="investment">$30k year</span></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Legal Costs
+                    <ul>
+                      <li>Company Registration <div class="investment">$2K</div> </li>
+                      <li>Trademarks and Patents <div class="investment">$10k</div></li>
+        
+                    </ul>
+                  </li>
+                  
+                </ol>
+                <div class="total">
+                  TOTAL
+                  <div class="investment">$794k</div>
+                </div>
+            </section>
+      </div>
+      <h2>Get in touch</h2>
+      <section id="contact">
+        <div class="page">
+          
+        </div>
+      </section>
+      <footer>
+       <div class="page"> © Sendvibe.com 2013</div>
+      </footer>
   </body>
 </html>

@@ -1,0 +1,197 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+header{
+	padding:$defaultPadding 0;
+	border-bottom:3px solid $color1;
+	
+	.logo{
+		@extend .floatL;
+	}
+
+}
+h2{
+	line-height: 220%;
+	font-size: 250%;
+	margin-bottom: $defaultPadding;
+	@extend .center;
+	display: block;
+	background: $black;
+	color:$white;
+}
+p{
+	line-height: 180%;
+}
+.page{
+
+	.block{
+		
+		margin:$defaultPadding*2 0;
+		@extend .clearfix;
+		.pic{
+			@include border-radius( 130px 130px 0 130px);
+			overflow: hidden;
+		}
+		.text{
+			line-height: 179%;
+			padding: 20px;
+			font-size: 130%;
+			color: $gray;
+		}
+		h2{
+			border-bottom: 3px solid $color2;
+		}
+		&:nth-of-type(2n) .pic{
+			@extend .floatR;
+			@include border-radius( 0 130px 130px 130px);
+			
+		}
+		&:nth-of-type(2n) .text{
+			@extend .floatL;
+		}
+	}
+}
+.menu{
+	@extend .floatR;
+	margin:20px 0;
+
+}
+.project-info{
+	.slogan{
+		margin-top: 20%;
+		font-family: $defaultFont;
+		font-size: 320%;
+		color:$white;
+		span{
+			background: $color2;
+			line-height: 240%;
+			padding: 13px;
+		}
+	}
+
+	.main-picture{
+		height:300px;
+		
+	}
+	.page{
+		@extend .h100;
+	}
+	height:450px;
+	background: url(../images/project-info.jpg);
+	@include background-size(100%);
+	background-attachment: fixed;
+	background-position: center;
+	.thermometer{
+			background: white;
+			background:rgba(255,255,255,0.6);
+			@extend .h100;
+			padding: $defaultPadding;
+
+			.column{
+				
+				*{
+					text-align: center;
+					padding: $defaultPadding 0;
+					@extend .block;
+					padding-bottom: 10px;
+				}
+				.counters{
+					font-size: 250%;
+					
+				}
+				.text{
+					font-size: 130%;
+
+				}
+			}
+			.progress{
+				width:85%;
+				margin:$defaultPadding*3;
+
+			}
+	}
+	
+}
+.btn{
+			background: $color1;
+			color:$white;
+			font-size: 180%;
+			text-transform: uppercase;
+			width: 100%;
+			text-align: center;
+			padding: $defaultPadding 0;
+			border: none;
+			@extend .animateAll;
+			&:hover{
+				background: lighten($color1, 5%)
+			}
+	}
+#pitch{
+	@extend .clearfix;
+}
+ol{
+    list-style: auto;
+    list-style-position: inside;
+  }
+#perks{
+	.perk{
+		margin:0 0 $defaultPadding*3 0;
+		@extend .clearfix;
+		.description{
+			
+		}
+		.claim{
+			
+		}
+		.amount{
+			@extend .floatR;
+			font-size: 130%;
+			background: $color2;
+			color: #fff;
+			padding: 12px;
+			width: 36.6%;
+			.dollars{
+				@extend .floatL;
+				margin-left: 20px;
+			}
+			.backers{
+				font-size: 50%;
+				color:darken($white, 5%);
+				line-height: 180%;
+				@extend .floatR;
+				margin-right: 20px;
+			}
+		}
+		.supporter{
+			@extend .floatR;
+			font-size: 70%;
+			color:$gray;
+			margin-right: 30px;
+		}
+		
+	}
+}
+#investment{
+	ol{
+		> li{
+			font-size: 150%;
+			line-height: 180%;
+		}
+	}
+	ul{
+		margin-left: 30px;
+		li{
+			font-size: 80%;
+			line-height: 180%;
+			border-bottom: 1px solid #eee;
+		}
+	}
+	.investment{
+		@extend .floatR;
+		
+	}
+	.total{
+		font-size: 300%;
+		margin: 30px 0;
+
+	}
+}	

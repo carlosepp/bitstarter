@@ -1,0 +1,79 @@
+/* ..-------------------------------------------------------...
+  |                         GRID DEFINITION                    |
+  |..--------------------------------------------------------..|*/
+
+$total-columns  : 8;
+$column-width   : 7.7em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+$show-grid-backgrounds  : false;
+
+
+
+
+.page {
+	@include susy-grid-background;
+	// Establish our default 4-column grid container.
+	@include container;
+
+	// Create a media-query breakpoint at a min-width of 30em
+	// And use a larger 8-column grid within that media-query.
+	@include at-breakpoint(30em 8) {
+	  // Establish our new 8-column container.
+	  @include container;
+	}
+
+	.block{
+
+		@include span-columns(8 omega, 8);
+		.pic{
+			@include span-columns(4, 8);
+		}
+		.text{
+			@include span-columns(4 omega, 8);
+		}
+		&:nth-of-type(2n) .pic{
+			@include span-columns(4 omega, 8);
+		}
+		&:nth-of-type(2n) .text{
+			@include span-columns(4, 8);
+		}
+	}
+}
+
+
+.project-info{
+		
+		.main-picture{
+			@include span-columns(4, 8);
+		}
+		.thermometer{
+			
+			@include span-columns(4 omega, 8);
+			.column{
+				@include span-columns(3,9);
+				
+				&:nth-of-type(3n){
+					@include span-columns(3 omega, 9);
+				} 
+				
+			}
+			.progress{
+				@include span-columns(8 omega, 8);
+			}
+		}
+	}
+
+
+
+#perks{
+	.perk{
+		.description{
+			@include span-columns(5,8);
+		}
+		.claim{
+			@include span-columns(3 omega, 8);
+		}
+
+	}
+}	
